@@ -1,0 +1,5 @@
+version: '3'
+services:
+    screeps:
+        environment:
+            STEAM_API_KEY: <steam key here>
