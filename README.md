@@ -58,3 +58,15 @@ No rooms are available when connecting the first time
 
 In some situations, the setup script may not work correctly the first time.
 Re-run the setup script (should be faster this time) and try to connect again.
+
+The mods added
+===============
+
+0. https://github.com/ScreepsMods/screepsmod-map-tool
+1. https://github.com/jkingry/screeps-mod-mapgen
+2. https://github.com/ScreepsMods/screepsmod-admin-utils
+3. https://github.com/ScreepsMods/screepsmod-market (the config file is market.yml)
+4. https://github.com/ScreepsMods/screepsmod-tickrate
+5. https://github.com/ScreepsMods/screepsmod-mongo
+6. https://github.com/ScreepsMods/screepsmod-auth
+7. https://github.com/ScreepsMods/screepsmod-features

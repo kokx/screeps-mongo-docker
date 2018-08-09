@@ -4,3 +4,8 @@
 
 sleep 30
 kill $pid
+
+(echo "utils.addNPCTerminals()" | npx screeps cli) & pid=$!
+
+sleep 5
+kill $pid

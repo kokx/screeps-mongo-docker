@@ -43,3 +43,8 @@ host = mongodb
 
 [redis]
 host = redis
+
+
+[maptool]
+user = admin
+pass = password
