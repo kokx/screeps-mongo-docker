@@ -4,6 +4,7 @@ services:
         build: screeps
         volumes:
             - ./mods.json:/screeps/mods.json
+            - ./market.yml:/screeps/market.yml
         depends_on:
             - mongodb
             - redis

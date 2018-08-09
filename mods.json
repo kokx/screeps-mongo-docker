@@ -1,5 +1,8 @@
 {
   "mods": [
+    "node_modules/screepsmod-map-tool/index.js",
+    "node_modules/screepsmod-market/index.js",
+    "node_modules/screeps-mod-mapgen/index.js",
     "node_modules/screepsmod-mongo/index.js",
     "node_modules/screepsmod-auth/index.js",
     "node_modules/screepsmod-tickrate/index.js",
@@ -7,6 +10,7 @@
     "node_modules/screepsmod-features/index.js"
   ],
   "bots": {
-    "simplebot": "node_modules/@screeps/simplebot/src"
+    "simplebot": "node_modules/@screeps/simplebot/src",
+    "tooangel": "node_modules/screeps-bot-tooangel/src"
   }
 }

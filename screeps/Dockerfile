@@ -10,7 +10,7 @@ RUN yarn add screeps
 RUN echo "" | npx screeps init
 
 # install mongodb backend
-RUN yarn add screepsmod-mongo screepsmod-auth screepsmod-tickrate screepsmod-admin-utils screepsmod-features
+RUN yarn add screepsmod-mongo screepsmod-auth screepsmod-tickrate screepsmod-admin-utils screepsmod-features screepsmod-market screepsmod-map-tool screeps-mod-mapgen screeps-bot-tooangel
 
 COPY .screepsrc .screepsrc
 COPY run.sh run.sh
