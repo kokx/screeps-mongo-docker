@@ -16,7 +16,7 @@ git clone https://github.com/kokx/screeps-mongo-docker.git
 
 Copy `docker-compose.override.yml.dist` to `docker-compose.override.yml` and
 add your steam key (you can obtain your steam key
-[here](https://github.com/kokx/screeps-mongo-docker.git)).
+[here](https://steamcommunity.com/dev/apikey)).
 
 Make sure that the docker daemon is running and then run the setup script:
 
