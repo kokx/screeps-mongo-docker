@@ -50,6 +50,41 @@ To access the server CLI:
 docker-compose exec screeps npx screeps cli
 ```
 
+Adding mods and/or bots
+-----------------------
+
+We'll be adding tooangel and the konami mod as examples.
+
+Edit `screeps/Dockerfile` and uncomment the `RUN yarn add` line, and append all the npm packages for mods and bots you want to add:
+
+```
+FROM kokx/screeps-base:latest
+
+# to install extra modules, uncomment the following line and add your modules:
+RUN yarn add screepsmod-konami screeps-bot-tooangel
+```
+
+And modify `mods.json` to include them:
+
+```json
+{
+  "mods": [
+    "node_modules/screepsmod-mongo/index.js",
+    "node_modules/screepsmod-auth/index.js",
+    "node_modules/screepsmod-tickrate/index.js",
+    "node_modules/screepsmod-admin-utils/index.js",
+    "node_modules/screepsmod-features/index.js",
+    "node_modules/screepsmod-konami/index.js"
+  ],
+  "bots": {
+    "simplebot": "node_modules/@screeps/simplebot/src",
+    "tooangel": "node_modules/screeps-bot-tooangel/src"
+  }
+}
+```
+
+And re-run `./setup.sh` to install the modules and reset the game.
+
 Troubleshooting
 ===============
 
